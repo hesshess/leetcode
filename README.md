@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/hesshess/leetcode/tree/master/0217-contains-duplicate) |
 | [0283-move-zeroes](https://github.com/hesshess/leetcode/tree/master/0283-move-zeroes) |
 | [0349-intersection-of-two-arrays](https://github.com/hesshess/leetcode/tree/master/0349-intersection-of-two-arrays) |
+| [0682-baseball-game](https://github.com/hesshess/leetcode/tree/master/0682-baseball-game) |
 ## Hash Table
 |  |
 | ------- |
@@ -75,6 +76,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0020-valid-parentheses](https://github.com/hesshess/leetcode/tree/master/0020-valid-parentheses) |
 | [0155-min-stack](https://github.com/hesshess/leetcode/tree/master/0155-min-stack) |
 | [0232-implement-queue-using-stacks](https://github.com/hesshess/leetcode/tree/master/0232-implement-queue-using-stacks) |
+| [0682-baseball-game](https://github.com/hesshess/leetcode/tree/master/0682-baseball-game) |
 | [0844-backspace-string-compare](https://github.com/hesshess/leetcode/tree/master/0844-backspace-string-compare) |
 ## Design
 |  |
@@ -88,5 +90,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [0682-baseball-game](https://github.com/hesshess/leetcode/tree/master/0682-baseball-game) |
 | [0844-backspace-string-compare](https://github.com/hesshess/leetcode/tree/master/0844-backspace-string-compare) |
 <!---LeetCode Topics End-->
