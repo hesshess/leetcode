@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0283-move-zeroes](https://github.com/hesshess/leetcode/tree/master/0283-move-zeroes) |
 | [0349-intersection-of-two-arrays](https://github.com/hesshess/leetcode/tree/master/0349-intersection-of-two-arrays) |
 | [0682-baseball-game](https://github.com/hesshess/leetcode/tree/master/0682-baseball-game) |
+| [0704-binary-search](https://github.com/hesshess/leetcode/tree/master/0704-binary-search) |
 ## Hash Table
 |  |
 | ------- |
@@ -56,6 +57,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0349-intersection-of-two-arrays](https://github.com/hesshess/leetcode/tree/master/0349-intersection-of-two-arrays) |
+| [0704-binary-search](https://github.com/hesshess/leetcode/tree/master/0704-binary-search) |
 ## Divide and Conquer
 |  |
 | ------- |
