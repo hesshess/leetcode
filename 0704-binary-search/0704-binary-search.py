@@ -4,8 +4,7 @@ class Solution:
         high = len(nums) - 1
 
         while low <= high:
-            mid = round((high - low) / 2 + low)
-            print(mid)
+            mid = (high+low) // 2
             if nums[mid] > target:
                 high = mid - 1
                 continue
