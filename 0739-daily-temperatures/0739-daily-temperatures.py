@@ -1,6 +1,6 @@
 class Solution:
     def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
-        n = len( temperatures)
+        n = len(temperatures)
         answer = [0] * n
         stack = []
 
@@ -10,4 +10,5 @@ class Solution:
                 answer[prev_idx] = i - prev_idx
 
             stack.append(i)
+
         return answer
