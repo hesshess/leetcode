@@ -1,17 +1,17 @@
 class Solution:
     def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        n = len(nums2)
         stack = []
-        next_g = {}
-
-        for num in nums2:
-            while stack and num > stack[-1]:
+        answer = {}
+        for i in range(n):
+            while stack and nums2[i] > stack[-1]:
                 prev = stack.pop()
-                next_g[prev] = num
-            stack.append(num)
+                answer[prev] = nums2[i]
+            stack.append(nums2[i])
         
         while stack:
             prev = stack.pop()
-            next_g[prev] = -1
-        
-        return [next_g[num] for num in nums1 ]
-        
+            answer[prev] = -1
+
+        return [answer[num] for num in nums1]
+
