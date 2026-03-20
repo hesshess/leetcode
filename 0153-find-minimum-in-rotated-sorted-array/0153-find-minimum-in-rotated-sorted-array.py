@@ -6,9 +6,7 @@ class Solution:
             mid = (high+low) // 2
             if nums[mid] > nums[high]:
                 low = mid + 1
-            elif nums[mid] < nums[low]:
-                high = mid
             else:
-                break
+                high = mid
 
         return nums[low]
