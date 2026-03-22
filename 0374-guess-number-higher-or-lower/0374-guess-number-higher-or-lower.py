@@ -8,14 +8,13 @@
 class Solution:
     def guessNumber(self, n: int) -> int:
         l, r = 1, n
-        mid = None
-        while 1 <= n:
+        while l <= n:
             mid = (l+r) // 2
-            if guess(mid) < 0:
+            res = guess(mid)
+            if res < 0:
                 r = mid - 1
-            elif guess(mid) > 0:
+            elif res > 0:
                 l = mid + 1
             else:
-                break
+                return mid
         
-        return mid
