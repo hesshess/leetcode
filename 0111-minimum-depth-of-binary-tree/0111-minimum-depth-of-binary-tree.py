@@ -9,10 +9,14 @@ class Solution:
         if not root:
             return 0
 
-        if not root.left:
-            return 1+ self.minDepth(root.right)
-        if not root.right:
-            return 1+self.minDepth(root.left)
+        q = deque([(root, 1)])
 
-        return 1+ min(self.minDepth(root.left), self.minDepth(root.right))
-        
+        while q:
+            node, depth = q.popleft()
+
+            if not node.left and not node.right:
+                return depth
+            if node.left:
+                q.append((node.left, depth + 1))
+            if node.right:
+                q.append((node.right, depth + 1))
