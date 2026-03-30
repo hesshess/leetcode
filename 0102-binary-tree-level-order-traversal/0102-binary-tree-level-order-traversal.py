@@ -11,7 +11,7 @@ class Solution:
 
         result = []
         q = deque([root])
-
+        
         while q:
             level = []
             for _ in range(len(q)):
@@ -22,6 +22,6 @@ class Solution:
                     q.append(node.left)
                 if node.right:
                     q.append(node.right)
-                
             result.append(level)
+
         return result
