@@ -19,4 +19,4 @@ class Solution:
 
         depth(root)
         return diameter
-    
+        
