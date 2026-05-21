@@ -12,6 +12,5 @@ class Solution:
                 l = mid + 1
             else:
                 return True
-        print(l,r)        
         return False
         
