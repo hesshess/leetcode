@@ -1,8 +1,11 @@
 class Solution:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
-        i = m - 1          # nums1의 마지막 유효 원소
-        j = n - 1          # nums2의 마지막 원소
-        k = m + n - 1      # nums1의 맨 뒤 위치
+        """
+        Do not return anything, modify nums1 in-place instead.
+        """
+        i = m - 1
+        j = n - 1
+        k = m + n - 1
 
         while i >= 0 and j >= 0:
             if nums1[i] > nums2[j]:
@@ -11,6 +14,7 @@ class Solution:
             else:
                 nums1[k] = nums2[j]
                 j -= 1
+            
             k -= 1
 
         while j >= 0:
