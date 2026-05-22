@@ -4,22 +4,24 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
-
-# from collections import deque
 class Solution:
-    def maxDepth(self, root: Optional[TreeNode]) -> int:
+    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
         if not root:
-            return 0
-        
+            return []
+
+        result = []
         q = deque([root])
-        depth = 0
+        
         while q:
-            depth += 1
-            level_size = len(q)
-            for _ in range(level_size):
+            level = []
+            for _ in range(len(q)):
                 node = q.popleft()
+                level.append(node.val)
+
                 if node.left:
                     q.append(node.left)
                 if node.right:
                     q.append(node.right)
-        return depth
+            result.append(level)
+
+        return result
