@@ -5,23 +5,8 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+    def maxDepth(self, root: Optional[TreeNode]) -> int:
         if not root:
-            return []
-
-        result = []
-        q = deque([root])
+            return 0
+        return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
         
-        while q:
-            level = []
-            for _ in range(len(q)):
-                node = q.popleft()
-                level.append(node.val)
-
-                if node.left:
-                    q.append(node.left)
-                if node.right:
-                    q.append(node.right)
-            result.append(level)
-
-        return result
